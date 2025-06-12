@@ -34,7 +34,6 @@ public class BlogService {
     }
     
     private String formatBlogPosts(String jsonResponse) {
-        // Simple formatting - in a real app you'd parse the JSON properly
         return jsonResponse
             .replace("{", "\n{")
             .replace("}", "}\n")
